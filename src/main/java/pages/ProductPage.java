@@ -62,6 +62,12 @@ public class ProductPage extends BasePage {
         }
         webDriver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
         Log.info("Ürün Sepete Eklendi");
+        try {
+            Thread.sleep(200);
+        }
+        catch (InterruptedException ignored){
+
+        }
 
     }
     public void clearSepet(){
